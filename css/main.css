@@ -71,6 +71,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
+  border: none;
 }
 .rating__button {
   background-color: var(--primary-orange);
@@ -89,6 +90,13 @@ body, html {
 .rating__button:hover {
   background-color: var(--neutral-white);
   color: var(--primary-orange);
+}
+.rating__input {
+  display: none;
+}
+.rating__input[type=radio]:checked + .rating__score {
+  background-color: var(--neutral-medium-grey);
+  color: var(--neutral-white);
 }
 
 .thanks {
