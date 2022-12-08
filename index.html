@@ -4,25 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <title>Interactive rating component</title>
+
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
   <main class="container">
-    <div class="card" data-controller="card" data-card-url-value="/thank_you.html">
+    <div class="card">
       <div class="rating">
         <div class="rating__icon">
-          <img src="./images/icon-star.svg" alt="" aria-hidden=“true”>
+          <img src="./images/icon-star.svg" alt="" aria-hidden="true">
         </div>
         <h1 class="rating__title">How did we do?</h1>
         <form id="form">
           <fieldset class="rating__scores">
-            <legend class="rating__text" >Please let us know how we did with your support request.
+            <legend class="rating__text">Please let us know how we did with your support request.
               All feedback is appreciated to help us improve our offering!</legend>
             <label class="rating__score" for="score_1">
               <input class="rating__input" type="radio" value="1" id="score_1" name="score">1
@@ -45,7 +43,7 @@
       </div>
 
       <div class="thanks thanks--hidden">
-        <img src="./images/illustration-thank-you.svg" alt="" class="thanks__img" aria-hidden=“true”>
+        <img src="./images/illustration-thank-you.svg" alt="" class="thanks__img" aria-hidden="true">
         <div class="thanks__score">
           You selected 0 out of 5
         </div>
