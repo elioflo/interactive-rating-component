@@ -54,7 +54,7 @@ body, html {
   background-color: var(--primary-orange);
   color: var(--neutral-white);
 }
-.rating__score--selected {
+.rating__score:has(> .rating__input:checked) {
   background-color: var(--neutral-medium-grey);
   color: var(--neutral-white);
 }
@@ -65,6 +65,7 @@ body, html {
 }
 .rating__text {
   margin-top: 15px;
+  margin-bottom: 15px;
   line-height: 22px;
 }
 .rating__scores {
@@ -92,11 +93,8 @@ body, html {
   color: var(--primary-orange);
 }
 .rating__input {
-  display: none;
-}
-.rating__input[type=radio]:checked + .rating__score {
-  background-color: var(--neutral-medium-grey);
-  color: var(--neutral-white);
+  opacity: 0;
+  position: absolute;
 }
 
 .thanks {

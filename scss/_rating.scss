@@ -16,7 +16,7 @@
       color: var(--neutral-white);
     }
 
-    &--selected {
+    &:has(> .rating__input:checked) {
       background-color: var(--neutral-medium-grey);
       color: var(--neutral-white);
     }
@@ -30,6 +30,7 @@
 
   &__text {
     margin-top: 15px;
+    margin-bottom: 15px;
     line-height: 22px;
   }
 
@@ -61,11 +62,7 @@
   }
 
   &__input {
-    display: none;
-  }
-
-  &__input[type='radio']:checked + &__score {
-    background-color: var(--neutral-medium-grey);
-    color: var(--neutral-white);
+    opacity: 0;
+    position: absolute;
   }
 }
